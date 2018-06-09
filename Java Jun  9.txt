@@ -1,0 +1,121 @@
+JDBC Connection 
+TFS/svn/git Repository***
+Maven 
+Jenkins CI/CD
+
+
+JDBC Connection 
+======================
+step 1:
+	--add jdbc connector.jar in our project
+	-right click on project
+	-then go to properteis
+	-then click on build path
+	-then click on library
+	-then click on add external jar 
+	-then browse the file and click on apply
+
+step 2: get database details
+	-server/host : localhost or 127.0.0.1
+	-dbname:   
+	-userid:  root
+	-password: root 
+
+	->create database
+	create database testdb;
+	
+	->change datasbase
+	use testdb;
+
+	-> create table 
+	create table product
+	(
+	pid int,
+	pname varchar(100),
+	price int
+	);
+
+	-> view data 
+	select * from product;
+
+	-> save data / insert data
+	insert into product(pid,pname, price)
+	values(1,'dove',40);
+
+
+Step 3:  java code
+	packages:
+	import java.sql.Connection;	//establish the connection 
+	import java.sql.DriverManager; //register/load driver
+	import java.sql.ResultSet;   // container of select/result
+	import java.sql.PrepareStatement; //execute sql command 
+
+
+Git Repository
+======================
+1. Create github account
+	github.com 
+
+	-create new repo
+
+	install git repository on local system 
+	
+2. Git Life Cylce
+	-> local files/folder/docs/code 
+		->init git repository (create local repository)
+			->add local files/folder to stage 
+				->commit  stage files/folder to stage  to master repo
+
+					->push to gitup (cloud repo)
+						
+
+
+3. open folder :
+	right click and colid git bash here 
+	
+	$git init
+	$git status 		
+	$git add -A    (add all files)
+	or
+	$git add filename.java f2.java
+	$git status
+	$git commit -m "my code"
+	$git log 
+	$git diff filename.java
+	
+	
+add remote/hub repository reference
+	$git remote add javacode ps://github.com/vimleshtech/javaprojectcode.git
+	$git push -u javacode master 
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
