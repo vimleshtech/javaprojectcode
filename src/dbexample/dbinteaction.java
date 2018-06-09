@@ -6,6 +6,7 @@ import java.sql.ResultSet;   // container of select/result
 import java.util.Scanner;
 import java.sql.PreparedStatement; //execute sql command 
 
+//database connection code 
 
 public class dbinteaction {
 
